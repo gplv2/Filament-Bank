@@ -35,7 +35,9 @@ module cut() {
             cylinder(r=bearing_inner_d/2, h=section_width);
         }
         else {
-            metric_thread(diameter=bearing_inner_d+1, pitch=1.5, length=section_width, internal=true);
+      color("blue") cylinder(r=bearing_inner_d/2+0.1, h=section_width);
+
+            //metric_thread(diameter=bearing_inner_d+1, pitch=1.5, length=section_width, internal=true);
         }
     }
     translate([-wheel_radius,top_inner_length/2-(festo_length+festo_sink_depth)/2,section_width/2]) 

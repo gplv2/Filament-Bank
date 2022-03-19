@@ -4,7 +4,7 @@ filament wheel axle as well as connectors to hold the wheel mounts together
 include <filament_bank_values.scad>
 use <../lib/iso-threads.scad>
 
-avoid_threads=false;
+avoid_threads=true;
 
 sidewall_width = ((section_width-spoolwheel_thickness)/2) - gap;
 
